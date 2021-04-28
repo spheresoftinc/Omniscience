@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftBicycle",
+        "repositoryURL": "https://github.com/spheresoftinc/SwiftBicycle",
+        "state": {
+          "branch": "main",
+          "revision": "3908b5d339c2b872f92cebc5d08214dd06046eea",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
