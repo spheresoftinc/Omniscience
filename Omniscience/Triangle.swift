@@ -53,7 +53,7 @@ class TriangleFactory {
             FieldDesc(label: "C (degrees)", field: angleC),
             FieldDesc(label: "C (radians)", field: radC),
             FieldDesc(label: "side b", field: sideB),
-            FieldDesc(label: "Circumference", field: circumference),
+            FieldDesc(label: "Perimeter", field: circumference),
             FieldDesc(label: "Area", field: area),
             FieldDesc(label: "Height", field: height),
             FieldDesc(label: "Median", field: median),
