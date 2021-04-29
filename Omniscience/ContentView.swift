@@ -25,6 +25,7 @@ struct ContentView: View {
     @State var geometry = [
         TriangleFactory().model,
         CircleFactory().model,
+        RegPolygonFactory().model,
         CylinderFactory().model,
         SphereFactory().model
     ]

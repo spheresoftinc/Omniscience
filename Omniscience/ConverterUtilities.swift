@@ -86,4 +86,7 @@ class FieldList: ObservableObject {
     @Published var items = [FieldDesc]()
 }
 
-
+// truky insane that I have to supply my own cotangent function...  Come on, Swift!
+func cot(_ x:Double) -> Double {
+    cos(x) / sin(x)
+}

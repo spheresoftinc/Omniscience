@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D40662CF262A10E70013CA9A /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40662CE262A10E50013CA9A /* ConverterView.swift */; };
+		D40849BC263AC5F4000A12EA /* RegPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40849BB263AC5F4000A12EA /* RegPolygon.swift */; };
+		D40849BE263AD58B000A12EA /* regpolygonhelp.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D40849BD263AD58B000A12EA /* regpolygonhelp.pdf */; };
 		D454F35C2630CDA10012F92E /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D454F35B2630CDA10012F92E /* PDFKitView.swift */; };
 		D454F38F263198DD0012F92E /* mainhelp.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D454F38E263198DD0012F92E /* mainhelp.pdf */; };
 		D454F3DC263831490012F92E /* circlehelp.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D454F3DB263831490012F92E /* circlehelp.pdf */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		D40662CE262A10E50013CA9A /* ConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
+		D40849BB263AC5F4000A12EA /* RegPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegPolygon.swift; sourceTree = "<group>"; };
+		D40849BD263AD58B000A12EA /* regpolygonhelp.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = regpolygonhelp.pdf; sourceTree = "<group>"; };
 		D454F35B2630CDA10012F92E /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		D454F38E263198DD0012F92E /* mainhelp.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = mainhelp.pdf; path = "Help Pages/mainhelp.pdf"; sourceTree = SOURCE_ROOT; };
 		D454F3DB263831490012F92E /* circlehelp.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = circlehelp.pdf; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			children = (
 				D454F3DE263831930012F92E /* trianglehelp.pdf */,
 				D454F3DB263831490012F92E /* circlehelp.pdf */,
+				D40849BD263AD58B000A12EA /* regpolygonhelp.pdf */,
 				D454F38E263198DD0012F92E /* mainhelp.pdf */,
 			);
 			path = "Help Pages";
@@ -111,6 +116,7 @@
 			children = (
 				D4CDE33D2621E0C800612969 /* Liquid.swift */,
 				D4CDE3392621DADD00612969 /* Circle.swift */,
+				D40849BB263AC5F4000A12EA /* RegPolygon.swift */,
 				D4B5B833262DDB08009961C1 /* Cylinder.swift */,
 				D4BACBE0261E251B0082DD5A /* ConverterApp.swift */,
 				D4BACBE2261E251B0082DD5A /* ContentView.swift */,
@@ -211,6 +217,7 @@
 				D4BACBE8261E25200082DD5A /* Preview Assets.xcassets in Resources */,
 				D454F3DF263831930012F92E /* trianglehelp.pdf in Resources */,
 				D454F3DC263831490012F92E /* circlehelp.pdf in Resources */,
+				D40849BE263AD58B000A12EA /* regpolygonhelp.pdf in Resources */,
 				D4BACBE5261E25200082DD5A /* Assets.xcassets in Resources */,
 				D454F38F263198DD0012F92E /* mainhelp.pdf in Resources */,
 			);
@@ -236,6 +243,7 @@
 				D4BACBE1261E251B0082DD5A /* ConverterApp.swift in Sources */,
 				D4CDE33A2621DADD00612969 /* Circle.swift in Sources */,
 				D454F35C2630CDA10012F92E /* PDFKitView.swift in Sources */,
+				D40849BC263AC5F4000A12EA /* RegPolygon.swift in Sources */,
 				D40662CF262A10E70013CA9A /* ConverterView.swift in Sources */,
 				D4BACC0326207C710082DD5A /* Triangle.swift in Sources */,
 				D4CDE345262229B500612969 /* Sphere.swift in Sources */,
