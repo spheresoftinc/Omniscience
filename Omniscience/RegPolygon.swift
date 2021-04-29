@@ -15,6 +15,7 @@ class RegPolygonFactory {
     // create fields
     var numSides = Field<Double>()
     var sideLength = Field<Double>()
+    var angles = Field<Double>()
     var perimeter = Field<Double>()
     var area = Field<Double>()
     var inradius = Field<Double>()
@@ -31,6 +32,7 @@ class RegPolygonFactory {
         model.fl.items = [
             FieldDesc(label: "Sides", field: numSides),
             FieldDesc(label: "Lengths", field: sideLength),
+            FieldDesc(label: "Angles", field: angles),
             FieldDesc(label: "Perimeter", field: perimeter),
             FieldDesc(label: "Area", field: area),
             FieldDesc(label: "Inradius", field: inradius),
@@ -45,6 +47,10 @@ class RegPolygonFactory {
         // specify calculations (setters)
         Calculator2OpFactory.registerFactory(target: perimeter, operand0: numSides, operand1: sideLength) {  $0 * $1 }
         Calculator2OpFactory.registerFactory(target: sideLength, operand0: numSides, operand1: perimeter) {  $1 / $0 }
+        
+        Calculator1OpFactory.registerFactory(target: angles, operand0: numSides) {
+                180.0 * ($0 - 2) /  $0
+            }
         
         Calculator2OpFactory.registerFactory(target: area, operand0: numSides, operand1: sideLength) {
                 $0 * pow($1, 2.0) * cot(Double.pi / $0) / 4.0
