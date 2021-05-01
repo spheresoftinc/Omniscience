@@ -23,8 +23,8 @@ class CircleFactory {
         model.pageTitle = "Circle"
         model.pageImage = "circle"
         model.pageHelp = "circlehelp"
-        model.nf.minimumFractionDigits = 1
-        model.nf.maximumFractionDigits = 1
+        model.nf.minimumFractionDigits = 0
+        model.nf.maximumFractionDigits = 4
         model.nf.numberStyle = .decimal
         model.fl.items = [
             FieldDesc(label: "Radius", field: radius),

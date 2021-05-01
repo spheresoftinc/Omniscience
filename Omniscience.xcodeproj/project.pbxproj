@@ -10,6 +10,8 @@
 		D40662CF262A10E70013CA9A /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40662CE262A10E50013CA9A /* ConverterView.swift */; };
 		D40849BC263AC5F4000A12EA /* RegPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40849BB263AC5F4000A12EA /* RegPolygon.swift */; };
 		D40849BE263AD58B000A12EA /* regpolygonhelp.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D40849BD263AD58B000A12EA /* regpolygonhelp.pdf */; };
+		D40849C0263C46A0000A12EA /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40849BF263C46A0000A12EA /* Ellipse.swift */; };
+		D40849C4263C6EE1000A12EA /* ellipsehelp.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D40849C3263C6EE1000A12EA /* ellipsehelp.pdf */; };
 		D454F35C2630CDA10012F92E /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D454F35B2630CDA10012F92E /* PDFKitView.swift */; };
 		D454F38F263198DD0012F92E /* mainhelp.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D454F38E263198DD0012F92E /* mainhelp.pdf */; };
 		D454F3DC263831490012F92E /* circlehelp.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D454F3DB263831490012F92E /* circlehelp.pdf */; };
@@ -42,6 +44,8 @@
 		D40662CE262A10E50013CA9A /* ConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
 		D40849BB263AC5F4000A12EA /* RegPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegPolygon.swift; sourceTree = "<group>"; };
 		D40849BD263AD58B000A12EA /* regpolygonhelp.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = regpolygonhelp.pdf; sourceTree = "<group>"; };
+		D40849BF263C46A0000A12EA /* Ellipse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ellipse.swift; sourceTree = "<group>"; };
+		D40849C3263C6EE1000A12EA /* ellipsehelp.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ellipsehelp.pdf; sourceTree = "<group>"; };
 		D454F35B2630CDA10012F92E /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		D454F38E263198DD0012F92E /* mainhelp.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = mainhelp.pdf; path = "Help Pages/mainhelp.pdf"; sourceTree = SOURCE_ROOT; };
 		D454F3DB263831490012F92E /* circlehelp.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = circlehelp.pdf; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 		D454F3A52632185D0012F92E /* Help Pages */ = {
 			isa = PBXGroup;
 			children = (
+				D40849C3263C6EE1000A12EA /* ellipsehelp.pdf */,
 				D454F3DE263831930012F92E /* trianglehelp.pdf */,
 				D454F3DB263831490012F92E /* circlehelp.pdf */,
 				D40849BD263AD58B000A12EA /* regpolygonhelp.pdf */,
@@ -116,6 +121,7 @@
 			children = (
 				D4CDE33D2621E0C800612969 /* Liquid.swift */,
 				D4CDE3392621DADD00612969 /* Circle.swift */,
+				D40849BF263C46A0000A12EA /* Ellipse.swift */,
 				D40849BB263AC5F4000A12EA /* RegPolygon.swift */,
 				D4B5B833262DDB08009961C1 /* Cylinder.swift */,
 				D4BACBE0261E251B0082DD5A /* ConverterApp.swift */,
@@ -217,6 +223,7 @@
 				D4BACBE8261E25200082DD5A /* Preview Assets.xcassets in Resources */,
 				D454F3DF263831930012F92E /* trianglehelp.pdf in Resources */,
 				D454F3DC263831490012F92E /* circlehelp.pdf in Resources */,
+				D40849C4263C6EE1000A12EA /* ellipsehelp.pdf in Resources */,
 				D40849BE263AD58B000A12EA /* regpolygonhelp.pdf in Resources */,
 				D4BACBE5261E25200082DD5A /* Assets.xcassets in Resources */,
 				D454F38F263198DD0012F92E /* mainhelp.pdf in Resources */,
@@ -250,6 +257,7 @@
 				D4BACBF8261F14A80082DD5A /* ConverterUtilities.swift in Sources */,
 				D499DBBB262B053C005476FE /* TVM.swift in Sources */,
 				D4CDE3522623243400612969 /* IdealGas.swift in Sources */,
+				D40849C0263C46A0000A12EA /* Ellipse.swift in Sources */,
 				D499DBD9262C6C0E005476FE /* Loan.swift in Sources */,
 				D499DBE9262C88C1005476FE /* Tipping.swift in Sources */,
 			);
