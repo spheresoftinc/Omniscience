@@ -34,9 +34,9 @@ class EllipseFactory {
         model.nf.maximumFractionDigits = 4
         model.nf.numberStyle = .decimal
         model.fl.items = [
-            FieldDesc(label: "Maj Radius (a)", field: majorRadius),
-            FieldDesc(label: "Min Radius (b)", field: minorRadius),
-            FieldDesc(label: "Focal Len (f)", field: foci),
+            FieldDesc(label: "Major Radius", field: majorRadius),
+            FieldDesc(label: "Min Radius", field: minorRadius),
+            FieldDesc(label: "Focal Length", field: foci),
             FieldDesc(label: "Eccentricity", field: eccentricity),
             FieldDesc(label: "Area", field: area),
             FieldDesc(label: "Perimeter", field: perimeter)
@@ -51,12 +51,33 @@ class EllipseFactory {
         Calculator2OpFactory.registerFactory(target: eccentricity, operand0: majorRadius, operand1: minorRadius) {
                 sqrt(1.0 - (pow($1, 2.0) / pow($0, 2.0)))
         }
+        Calculator2OpFactory.registerFactory(target: majorRadius, operand0: eccentricity, operand1: minorRadius) {
+                sqrt(pow($1, 2.0) / (1.0 - pow($0, 2.0)))
+        }
+        Calculator2OpFactory.registerFactory(target: minorRadius, operand0: eccentricity, operand1: majorRadius) {
+                sqrt(pow($1, 2.0) * (1.0 - pow($0, 2.0)))
+        }
+        
         Calculator2OpFactory.registerFactory(target: foci, operand0: majorRadius, operand1: minorRadius) {
                 sqrt(pow($0, 2.0) - pow($1, 2.0))
         }
+        Calculator2OpFactory.registerFactory(target: majorRadius, operand0: foci, operand1: minorRadius) {
+                sqrt(pow($0, 2.0) + pow($1, 2.0))
+        }
+        Calculator2OpFactory.registerFactory(target: minorRadius, operand0: foci, operand1: majorRadius) {
+                sqrt(pow($1, 2.0) - pow($0, 2.0))
+        }
+        
         Calculator2OpFactory.registerFactory(target: area, operand0: majorRadius, operand1: minorRadius) {
                 Double.pi * $0 * $1
         }
+        Calculator2OpFactory.registerFactory(target: majorRadius, operand0: area, operand1: minorRadius) {
+                $0 / (Double.pi * $1)
+        }
+        Calculator2OpFactory.registerFactory(target: minorRadius, operand0: area, operand1: majorRadius) {
+                $0 / (Double.pi * $1)
+        }
+        
         Calculator2OpFactory.registerFactory(target: perimeter, operand0: majorRadius, operand1: minorRadius) {
                 Perimeter(a: $0, b: $1)
         }
