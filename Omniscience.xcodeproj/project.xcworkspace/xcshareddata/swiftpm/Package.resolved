@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "SwiftBicycle",
-        "repositoryURL": "https://github.com/spheresoftinc/SwiftBicycle",
-        "state": {
-          "branch": "main",
-          "revision": "3908b5d339c2b872f92cebc5d08214dd06046eea",
-          "version": null
-        }
+  "pins" : [
+    {
+      "identity" : "swiftbicycle",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/spheresoftinc/SwiftBicycle",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8ad68eab6a046cb7a4dd578dde4d8063df9c32c7"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
