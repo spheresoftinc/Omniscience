@@ -25,20 +25,19 @@ extension TextField where Label == Text {
     }
 }
 
-// displays one row of label and TextField for a converter
+// displays one row of label and TextField for a converter based on the FieldDesc passed in
 struct ConverterRow: View {
-    var text: String
-    @Binding var field: Field<Double>
+    @Binding var fd: FieldDesc
     
     var body: some View {
         HStack {
             
-            Text(text + " ")
+            Text(fd.label + " ")
                 .frame(width: 120, alignment: .trailing)
             
-            TextField(text, field: $field)
-                .foregroundColor(code: field.code)
-                .keyboardType(.decimalPad)
+            TextField(fd.label, field: $fd.field)
+                .foregroundColor(code: fd.field.code)
+                .keyboardType(fd.keyboard)
         }
     }
 }
@@ -48,10 +47,10 @@ struct FieldDesc: Hashable, Identifiable  {
     static func == (lhs: FieldDesc, rhs: FieldDesc) -> Bool {   // fields are equal if IDs match
         lhs.id == rhs.id
     }
-    let id = UUID()
+    let id = UUID() // needed to make this Identifiable
     var label: String
     var field: Field<Double>
-    var keyboard = UIKeyboardType.decimalPad
+    var keyboard = UIKeyboardType.numbersAndPunctuation // default keyboard
 }
 
 // needed extensions to support iterable field lists in Views properly
@@ -86,7 +85,7 @@ class FieldList: ObservableObject {
     @Published var items = [FieldDesc]()
 }
 
-// truky insane that I have to supply my own cotangent function...  Come on, Swift!
+// truly insane that I have to supply my own cotangent function...  Come on, Swift!
 func cot(_ x:Double) -> Double {
     cos(x) / sin(x)
 }

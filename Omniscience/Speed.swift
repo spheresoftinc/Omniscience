@@ -22,7 +22,7 @@ class SpeedFactory {
     
     init() {
         // set up metadata and fields in the underlying ConverterModel
-        model.pageTitle = "Speed"
+        model.pageTitle = "Speed / Acceleration"
         model.pageHelp = "Help!"
         model.nf.minimumFractionDigits = 0
         model.nf.maximumFractionDigits = 4

@@ -20,7 +20,8 @@ struct ContentView: View {
         LengthFactory().model,
         AreaFactory().model,
         WeightFactory().model,
-        TimeFactory().model
+        TimeFactory().model,
+        SpeedsFactory().model
     ]
     @State var geometry = [
         TriangleFactory().model,

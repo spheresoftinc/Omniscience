@@ -59,7 +59,7 @@ struct ConverterView: View {
             
             // iterate through the model's FieldList and lay out in View
             ForEach(model.fl.items.indexed(), id: \.1.id) { index, fd in
-                ConverterRow(text: fd.label, field: self.model.$fl.items[index].field)
+                ConverterRow(fd: self.model.$fl.items[index])
             }
           
         }
